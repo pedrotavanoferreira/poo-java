@@ -9,5 +9,14 @@ public class Main {
         System.out.println(pessoa1.getNome());
         System.out.println(pessoa2.getNome());
         pessoa1.comer();
+
+        var analistaSistemas = new AnalistaSistemas();
+        var gerenteSistemas = new GerenteSistemas();
+        analistaSistemas.setSalario(10000D);
+        gerenteSistemas.setSalario(15000D);
+        System.out.println(gerenteSistemas.getSalario());
+        System.out.println(analistaSistemas.getSalario());
+        analistaSistemas.analisarSistemas();
+        gerenteSistemas.gerenciarEquipes();
     }
 }
