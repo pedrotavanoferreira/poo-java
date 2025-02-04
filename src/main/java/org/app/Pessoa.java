@@ -1,6 +1,6 @@
 package org.app;
 
-public class Pessoa {
+public class Pessoa implements PessoaContrato {
 
     private String nome;
     private String idade;
@@ -27,5 +27,10 @@ public class Pessoa {
 
     public void setIdade(String idade) {
         this.idade = idade;
+    }
+
+    @Override
+    public void viver() {
+        System.out.println("vivendo");
     }
 }

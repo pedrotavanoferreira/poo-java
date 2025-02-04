@@ -9,6 +9,7 @@ public class Main {
         System.out.println(pessoa1.getNome());
         System.out.println(pessoa2.getNome());
         pessoa1.comer();
+        pessoa1.viver();
 
         var analistaSistemas = new AnalistaSistemas();
         var gerenteSistemas = new GerenteSistemas();
