@@ -19,5 +19,11 @@ public class Main {
         System.out.println(analistaSistemas.getSalario());
         analistaSistemas.analisarSistemas();
         gerenteSistemas.gerenciarEquipes();
+
+        int[] arrayNumeros = new int[3];
+        arrayNumeros[0] = 5;
+        System.out.println(arrayNumeros[0]);
+        System.out.println(arrayNumeros[2]);
+
     }
 }
