@@ -1,5 +1,8 @@
 package org.app;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         var pessoa1 = new Pessoa();
@@ -22,8 +25,17 @@ public class Main {
 
         int[] arrayNumeros = new int[3];
         arrayNumeros[0] = 5;
+        arrayNumeros[1] = 6;
+        arrayNumeros[2] = 2;
+        System.out.println("Array não ordenado:");
         System.out.println(arrayNumeros[0]);
+        System.out.println(arrayNumeros[1]);
         System.out.println(arrayNumeros[2]);
 
+        Arrays.sort(arrayNumeros);
+        System.out.println("Array ordenado:");
+        System.out.println(arrayNumeros[0]);
+        System.out.println(arrayNumeros[1]);
+        System.out.println(arrayNumeros[2]);
     }
 }
