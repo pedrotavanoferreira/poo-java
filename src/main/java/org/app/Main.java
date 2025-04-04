@@ -1,6 +1,7 @@
 package org.app;
 
-import java.lang.reflect.Array;
+import java.awt.*;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -37,5 +38,14 @@ public class Main {
         System.out.println(arrayNumeros[0]);
         System.out.println(arrayNumeros[1]);
         System.out.println(arrayNumeros[2]);
+
+
+        ArrayList<String> listaNomes = new ArrayList<String>();
+        listaNomes.add("Pedro");
+        System.out.println(listaNomes.get(0));
+        listaNomes.add("Nome");
+        listaNomes.add("Askdna");
+        listaNomes.add("Aasfasf");
+        listaNomes.forEach(System.out::println);
     }
 }
